@@ -19,15 +19,16 @@ class CatalogController extends \yii\web\Controller
         }
     }
 
-    public function actionList($id = null)
+    public function actionList($slug = null)
     {
         /** @var Category $category */
         $category = null;
 
         $categories = Category::find()->indexBy('id')->orderBy('id')->all();
-
+        if ($slug !== null)
+            $id = Category::findOne(['slug' => $slug])->id;
         $productsQuery = Product::find();
-        if ($id !== null && isset($categories[$id])) {
+        if (isset($id) && $id !== null && isset($categories[$id])) {
             $category = $categories[$id];
             $productsQuery->where(['category_id' => $this->getCategoryIds($categories, $id)]);
         }
@@ -64,7 +65,7 @@ class CatalogController extends \yii\web\Controller
                 $menuItems[$category->id] = [
                     'active' => $activeId === $category->id,
                     'label' => $category->title,
-                    'url' => ['catalog/list', 'id' => $category->id],
+                    'url' => ['catalog/list', 'slug' => $category->slug],
                 ];
             } else {
                 $this->placeCategory($category, $menuItems, $activeId);
@@ -87,7 +88,7 @@ class CatalogController extends \yii\web\Controller
                 $menuItems[$id]['items'][$category->id] = [
                     'active' => $activeId === $category->id,
                     'label' => $category->title,
-                    'url' => ['catalog/list', 'id' => $category->id],
+                    'url' => ['catalog/list', 'slug' => $category->slug],
                 ];
                 break;
             } elseif (!empty($menuItems[$id]['items'])) {

@@ -2,14 +2,13 @@
 use yii\helpers\Html;
 use yii\widgets\ListView;
 use yii\widgets\Menu;
+use yii\helpers\Url;
 
 /* @var $this yii\web\View */
-$title = $category === null ? 'Welcome!' : $category->title;
+$title = $category === null ? 'Категории' : $category->title;
 $this->title = Html::encode($title);
 ?>
-
-<h1><?= Html::encode($title) ?></h1>
-
+<h1><?= Html::encode($title); ?></h1>
 <div class="container-fluid">
   <div class="row">
       <div class="col-xs-4">
@@ -24,6 +23,7 @@ $this->title = Html::encode($title);
           <?= ListView::widget([
               'dataProvider' => $productsDataProvider,
               'itemView' => '_product',
+              'summary' => 'Показаны {begin}-{end} из {count}',
           ]) ?>
       </div>
   </div>

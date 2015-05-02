@@ -60,14 +60,14 @@ class Order extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'created_at' => 'Created At',
-            'updated_at' => 'Updated At',
-            'phone' => 'Phone',
-            'address' => 'Address',
+            'id' => 'id',
+            'created_at' => 'Создан',
+            'updated_at' => 'Обновлен',
+            'phone' => 'Телефон',
+            'address' => 'Адрес',
             'email' => 'Email',
-            'notes' => 'Notes',
-            'status' => 'Status',
+            'notes' => 'Комментарий',
+            'status' => 'Статус заказа',
         ];
     }
 

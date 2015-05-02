@@ -26,7 +26,7 @@ AppAsset::register($this);
     <div class="wrap">
         <?php
             NavBar::begin([
-                'brandLabel' => 'Shop',
+                'brandLabel' => 'Интернет-магазин',
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-inverse navbar-fixed-top',
@@ -34,9 +34,9 @@ AppAsset::register($this);
             ]);
             $itemsInCart = Yii::$app->cart->getCount();
             $menuItems = [
-                ['label' => 'About', 'url' => ['/site/about']],
-                ['label' => 'Contact', 'url' => ['/site/contact']],
-                ['label' => 'My cart' . ($itemsInCart ? " ($itemsInCart)" : ''), 'url' => ['/cart/list']],
+                ['label' => 'О нас', 'url' => ['/site/about']],
+                ['label' => 'Контакты', 'url' => ['/site/contact']],
+                ['label' => 'Корзина' . ($itemsInCart ? " ($itemsInCart)" : ''), 'url' => ['/cart/list']],
             ];
             /*if (Yii::$app->user->isGuest) {
                 $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
@@ -66,7 +66,7 @@ AppAsset::register($this);
 
     <footer class="footer">
         <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+        <p class="pull-left">&copy; Pims <?= date('Y') ?></p>
         <p class="pull-right"><?= Yii::powered() ?></p>
         </div>
     </footer>

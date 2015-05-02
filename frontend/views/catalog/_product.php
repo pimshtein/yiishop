@@ -19,8 +19,8 @@ use yii\helpers\Markdown;
 
     <div class="col-xs-4 price">
         <div class="row">
-            <div class="col-xs-12">$<?= $model->price ?></div>
-            <div class="col-xs-12"><?= Html::a('Add to cart', ['cart/add', 'id' => $model->id], ['class' => 'btn btn-success'])?></div>
+            <div class="col-xs-12"><?= round($model->price) ?> р.</div>
+            <div class="col-xs-12"><?= Html::a('Купить', ['cart/add', 'id' => $model->id], ['class' => 'btn btn-success'])?></div>
         </div>
     </div>
 </div>
