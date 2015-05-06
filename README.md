@@ -1,4 +1,4 @@
-Yii 2 shop example project
+Yii 2 shop 
 ==========================
 
 This is example project implementing a shop created to help people learn Yii 2.0.
