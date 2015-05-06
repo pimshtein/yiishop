@@ -17,7 +17,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'description')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'category_id')->dropDownList(ArrayHelper::map($categories, 'id', 'title'), ['prompt' => 'Select category']) ?>
+    <?= $form->field($model, 'category_id')->dropDownList(ArrayHelper::map($categories, 'id', 'title'), ['prompt' => 'Выберите категорию']) ?>
+
+    <?= $form->field($model, 'brand_id')->dropDownList(ArrayHelper::map($brands, 'id', 'title'), ['prompt' => 'Выберите производителя']) ?>
 
     <?= $form->field($model, 'price')->textInput(['maxlength' => 19]) ?>
 

@@ -8,7 +8,7 @@ use yii\helpers\Url;
 /* @var $searchModel backend\models\ProductSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Products';
+$this->title = 'Товары';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="product-index">
@@ -17,7 +17,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Product', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Создать', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -26,12 +26,21 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             'title',
             'description:ntext',
+
             [
                 'attribute' => 'category_id',
                 'value' => function ($model) {
                     return empty($model->category_id) ? '-' : $model->category->title;
                 },
             ],
+
+            [
+                'attribute' => 'brand_id',
+                'value' => function ($model) {
+                    return empty($model->brand_id) ? '-' : $model->brand->title;
+                },
+            ],
+
             'price',
 
             [

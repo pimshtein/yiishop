@@ -1,0 +1,2507 @@
+2015-05-02 16:49:17 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Access to undeclared static property: yii\helpers\Inflector::$translator' in /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/SluggableBehavior.php:167
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): yii\behaviors\AttributeBehavior->evaluateAttributes()
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): ::call_user_func:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php:538}()
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(351): yii\base\Component->trigger()
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(318): yii\base\Model->beforeValidate()
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\base\Model->validate()
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(584): yii\db\ActiveRecord->update()
+#6 /var/www/yii2-shop/backend/controllers/CategoryController.php(89): yii\db\BaseActiveRecord->save()
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CategoryController->actionUpdate()
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#9 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams()
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction()
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#13 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#14 {main}
+2015-05-02 16:49:17 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'category/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'eEhoOFExS1gOJypKC1t7KhoGX0kZaGY.KnofSRRiCW4ecA1OE3sOFQ=='
+    'Category' => [
+        'parent_id' => ''
+        'title' => 'Квадрокоптеры'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '148ef2644435bd3c2c1280e9436751950bd8cbbba41ffce4e24ae2ef570ecac2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"voBrZj0rbN7qHY-fR2wqESB6f8evBJEM\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '190'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://admin.shop.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=category%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=148ef2644435bd3c2c1280e9436751950bd8cbbba41ffce4e24ae2ef570ecac2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22voBrZj0rbN7qHY-fR2wqESB6f8evBJEM%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '36338'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=category%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=category%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430585357.176
+    'REQUEST_TIME' => 1430585357
+]
+2015-05-02 16:51:59 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'array_keys() expects parameter 1 to be array, string given' in /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseInflector.php:448
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseInflector.php(425): yii\helpers\BaseInflector::transliterate()
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/SluggableBehavior.php(171): yii\helpers\BaseInflector::slug()
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/AttributeBehavior.php(94): yii\behaviors\SluggableBehavior->getValue()
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): yii\behaviors\AttributeBehavior->evaluateAttributes()
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): ::call_user_func:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php:538}()
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(351): yii\base\Component->trigger()
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(318): yii\base\Model->beforeValidate()
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\base\Model->validate()
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(584): yii\db\ActiveRecord->update()
+#9 /var/www/yii2-shop/backend/controllers/CategoryController.php(89): yii\db\BaseActiveRecord->save()
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CategoryController->actionUpdate()
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams()
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#14 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction()
+#15 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#16 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2015-05-02 16:51:59 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'category/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'Zk5ibng0SXgQISAcIl55CgQAVR8wbWQeNHwVHz1nC04AdgcYOn4MNQ=='
+    'Category' => [
+        'parent_id' => ''
+        'title' => 'Квадрокоптеры'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '148ef2644435bd3c2c1280e9436751950bd8cbbba41ffce4e24ae2ef570ecac2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"voBrZj0rbN7qHY-fR2wqESB6f8evBJEM\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '190'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://admin.shop.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=category%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=148ef2644435bd3c2c1280e9436751950bd8cbbba41ffce4e24ae2ef570ecac2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22voBrZj0rbN7qHY-fR2wqESB6f8evBJEM%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '36344'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=category%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=category%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430585519.301
+    'REQUEST_TIME' => 1430585519
+]
+2015-05-02 16:53:50 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'array_keys() expects parameter 1 to be array, string given' in /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseInflector.php:448
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseInflector.php(425): yii\helpers\BaseInflector::transliterate()
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/SluggableBehavior.php(171): yii\helpers\BaseInflector::slug()
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/AttributeBehavior.php(94): yii\behaviors\SluggableBehavior->getValue()
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): yii\behaviors\AttributeBehavior->evaluateAttributes()
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): ::call_user_func:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php:538}()
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(351): yii\base\Component->trigger()
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(318): yii\base\Model->beforeValidate()
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\base\Model->validate()
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(584): yii\db\ActiveRecord->update()
+#9 /var/www/yii2-shop/backend/controllers/CategoryController.php(89): yii\db\BaseActiveRecord->save()
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CategoryController->actionUpdate()
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams()
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#14 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction()
+#15 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#16 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2015-05-02 16:53:50 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'category/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'a0FFWVNoZ3kdLgcrCQJXCwkPcigbMUofOXMyKBY7JU8NeSAvESIiNA=='
+    'Category' => [
+        'parent_id' => ''
+        'title' => 'Квадрокоптеры'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '148ef2644435bd3c2c1280e9436751950bd8cbbba41ffce4e24ae2ef570ecac2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"voBrZj0rbN7qHY-fR2wqESB6f8evBJEM\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '190'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://admin.shop.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=category%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=148ef2644435bd3c2c1280e9436751950bd8cbbba41ffce4e24ae2ef570ecac2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22voBrZj0rbN7qHY-fR2wqESB6f8evBJEM%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '36359'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=category%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=category%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430585630.547
+    'REQUEST_TIME' => 1430585630
+]
+2015-05-02 17:58:18 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'array_keys() expects parameter 1 to be array, string given' in /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseInflector.php:448
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseInflector.php(425): yii\helpers\BaseInflector::transliterate('???')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/SluggableBehavior.php(171): yii\helpers\BaseInflector::slug('???', '???', '???')
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/AttributeBehavior.php(94): yii\behaviors\SluggableBehavior->getValue('???')
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): yii\behaviors\AttributeBehavior->evaluateAttributes('???')
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): ::call_user_func:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php:538}('???', '???')
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(351): yii\base\Component->trigger('???', '???')
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(318): yii\base\Model->beforeValidate()
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\base\Model->validate('???', '???')
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(584): yii\db\ActiveRecord->update('???', '???')
+#9 /var/www/yii2-shop/backend/controllers/CategoryController.php(89): yii\db\BaseActiveRecord->save('???', '???')
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CategoryController->actionUpdate('???')
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#14 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('???', '???')
+#15 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#16 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2015-05-02 17:57:17 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'category/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'NXZBbWx1VGtDGQMfNh9kGVc4dhwkLHkNZ0Q2HCkmFl1TTiQbLj8RJg=='
+    'Category' => [
+        'parent_id' => ''
+        'title' => 'Квадрокоптеры'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '148ef2644435bd3c2c1280e9436751950bd8cbbba41ffce4e24ae2ef570ecac2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"voBrZj0rbN7qHY-fR2wqESB6f8evBJEM\";}'
+    'XDEBUG_SESSION' => '16939'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '190'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://admin.shop.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=category%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=148ef2644435bd3c2c1280e9436751950bd8cbbba41ffce4e24ae2ef570ecac2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22voBrZj0rbN7qHY-fR2wqESB6f8evBJEM%22%3B%7D; XDEBUG_SESSION=16939'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '36599'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=category%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=category%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430589437.739
+    'REQUEST_TIME' => 1430589437
+]
+2015-05-02 19:59:46 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'array_keys() expects parameter 1 to be array, string given' in /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseInflector.php:448
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseInflector.php(425): yii\helpers\BaseInflector::transliterate()
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/SluggableBehavior.php(171): yii\helpers\BaseInflector::slug()
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/AttributeBehavior.php(94): yii\behaviors\SluggableBehavior->getValue()
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): yii\behaviors\AttributeBehavior->evaluateAttributes()
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): ::call_user_func:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php:538}()
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(351): yii\base\Component->trigger()
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(318): yii\base\Model->beforeValidate()
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\base\Model->validate()
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(584): yii\db\ActiveRecord->update()
+#9 /var/www/yii2-shop/backend/controllers/CategoryController.php(89): yii\db\BaseActiveRecord->save()
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CategoryController->actionUpdate()
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams()
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#14 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction()
+#15 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#16 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2015-05-02 19:59:46 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'category/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'RHE3R1BFalQyHnU1Ci9aJiY/ADYYHEcyFkNANhUWKGIiSVIxEg8vGQ=='
+    'Category' => [
+        'parent_id' => ''
+        'title' => 'Квадрокоптеры'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '148ef2644435bd3c2c1280e9436751950bd8cbbba41ffce4e24ae2ef570ecac2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"voBrZj0rbN7qHY-fR2wqESB6f8evBJEM\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '192'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://admin.shop.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=category%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=148ef2644435bd3c2c1280e9436751950bd8cbbba41ffce4e24ae2ef570ecac2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22voBrZj0rbN7qHY-fR2wqESB6f8evBJEM%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '36722'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=category%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=category%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430596786.623
+    'REQUEST_TIME' => 1430596786
+]
+2015-05-02 20:01:00 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'array_keys() expects parameter 1 to be array, string given' in /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseInflector.php:448
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseInflector.php(425): yii\helpers\BaseInflector::transliterate('???')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/SluggableBehavior.php(171): yii\helpers\BaseInflector::slug('???', '???', '???')
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/AttributeBehavior.php(94): yii\behaviors\SluggableBehavior->getValue('???')
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): yii\behaviors\AttributeBehavior->evaluateAttributes('???')
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): ::call_user_func:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php:538}('???', '???')
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(351): yii\base\Component->trigger('???', '???')
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(318): yii\base\Model->beforeValidate()
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\base\Model->validate('???', '???')
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(584): yii\db\ActiveRecord->update('???', '???')
+#9 /var/www/yii2-shop/backend/controllers/CategoryController.php(89): yii\db\BaseActiveRecord->save('???', '???')
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CategoryController->actionUpdate('???')
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#14 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('???', '???')
+#15 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#16 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2015-05-02 20:00:32 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'category/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'OGQ4MUcudnROC3pDHURGBloqD0APd1sSalZPQAJ9NEJeXF1HBWQzOQ=='
+    'Category' => [
+        'parent_id' => ''
+        'title' => 'Квадрокоптеры'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '148ef2644435bd3c2c1280e9436751950bd8cbbba41ffce4e24ae2ef570ecac2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"voBrZj0rbN7qHY-fR2wqESB6f8evBJEM\";}'
+    'XDEBUG_SESSION' => '11229'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '190'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://admin.shop.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=category%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=148ef2644435bd3c2c1280e9436751950bd8cbbba41ffce4e24ae2ef570ecac2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22voBrZj0rbN7qHY-fR2wqESB6f8evBJEM%22%3B%7D; XDEBUG_SESSION=11229'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '36736'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=category%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=category%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430596832.498
+    'REQUEST_TIME' => 1430596832
+]
+2015-05-02 20:14:50 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'array_keys() expects parameter 1 to be array, string given' in /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseInflector.php:448
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseInflector.php(425): yii\helpers\BaseInflector::transliterate('???')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/SluggableBehavior.php(171): yii\helpers\BaseInflector::slug('???', '???', '???')
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/AttributeBehavior.php(94): yii\behaviors\SluggableBehavior->getValue('???')
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): yii\behaviors\AttributeBehavior->evaluateAttributes('???')
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): ::call_user_func:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php:538}('???', '???')
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(351): yii\base\Component->trigger('???', '???')
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(318): yii\base\Model->beforeValidate()
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\base\Model->validate('???', '???')
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(584): yii\db\ActiveRecord->update('???', '???')
+#9 /var/www/yii2-shop/backend/controllers/CategoryController.php(89): yii\db\BaseActiveRecord->save('???', '???')
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CategoryController->actionUpdate('???')
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#14 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('???', '???')
+#15 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#16 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2015-05-02 20:14:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'category/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'V1NDNTVyQ3cmMDpXQAsvLTA7KGdBNRo7EAEGeF0gICIgAAdfRRgSAw=='
+    'Category' => [
+        'parent_id' => ''
+        'title' => 'Квадрокоптеры'
+    ]
+]
+
+$_COOKIE = [
+    'XDEBUG_SESSION' => '11578'
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '190'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://admin.shop.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=category%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'XDEBUG_SESSION=11578; _csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '54739'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=category%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=category%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430597667.678
+    'REQUEST_TIME' => 1430597667
+]
+2015-05-02 20:16:56 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'array_keys() expects parameter 1 to be array, string given' in /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseInflector.php:448
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseInflector.php(425): yii\helpers\BaseInflector::transliterate('???')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/SluggableBehavior.php(171): yii\helpers\BaseInflector::slug('???', '???', '???')
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/AttributeBehavior.php(94): yii\behaviors\SluggableBehavior->getValue('???')
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): yii\behaviors\AttributeBehavior->evaluateAttributes('???')
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): ::call_user_func:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php:538}('???', '???')
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(351): yii\base\Component->trigger('???', '???')
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(318): yii\base\Model->beforeValidate()
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\base\Model->validate('???', '???')
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(584): yii\db\ActiveRecord->update('???', '???')
+#9 /var/www/yii2-shop/backend/controllers/CategoryController.php(89): yii\db\BaseActiveRecord->save('???', '???')
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CategoryController->actionUpdate('???')
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#14 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('???', '???')
+#15 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#16 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2015-05-02 20:16:26 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'category/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'alp0TXhlNlEbOQ0vDRxaCw0yHx8MIm8dLQgxABA3VQQdCTAnCA9nJQ=='
+    'Category' => [
+        'parent_id' => ''
+        'title' => 'Квадрокоптеры'
+    ]
+]
+
+$_COOKIE = [
+    'XDEBUG_SESSION' => '11578'
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '190'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://admin.shop.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=category%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'XDEBUG_SESSION=11578; _csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '54754'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=category%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=category%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430597786.142
+    'REQUEST_TIME' => 1430597786
+]
+2015-05-02 20:21:14 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'array_keys() expects parameter 1 to be array, string given' in /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseInflector.php:448
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseInflector.php(425): yii\helpers\BaseInflector::transliterate('???')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/SluggableBehavior.php(171): yii\helpers\BaseInflector::slug('???', '???', '???')
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/AttributeBehavior.php(94): yii\behaviors\SluggableBehavior->getValue('???')
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): yii\behaviors\AttributeBehavior->evaluateAttributes('???')
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): ::call_user_func:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php:538}('???', '???')
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(351): yii\base\Component->trigger('???', '???')
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(318): yii\base\Model->beforeValidate()
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\base\Model->validate('???', '???')
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(584): yii\db\ActiveRecord->update('???', '???')
+#9 /var/www/yii2-shop/backend/controllers/CategoryController.php(89): yii\db\BaseActiveRecord->save('???', '???')
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CategoryController->actionUpdate('???')
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#14 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('???', '???')
+#15 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#16 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2015-05-02 20:20:57 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'category/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'YV91cmJSdnUQPAwQFysaLwY3HiAWFS85Jg0wPwoAFSAWDDEYEjgnAQ=='
+    'Category' => [
+        'parent_id' => ''
+        'title' => 'Квадрокоптеры'
+    ]
+]
+
+$_COOKIE = [
+    'XDEBUG_SESSION' => '11578'
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '190'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://admin.shop.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=category%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'XDEBUG_SESSION=11578; _csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '54898'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=category%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=category%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430598057.852
+    'REQUEST_TIME' => 1430598057
+]
+2015-05-02 20:29:35 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'array_keys() expects parameter 1 to be array, string given' in /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseInflector.php:448
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseInflector.php(425): yii\helpers\BaseInflector::transliterate('???')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/SluggableBehavior.php(171): yii\helpers\BaseInflector::slug('???', '???', '???')
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/AttributeBehavior.php(94): yii\behaviors\SluggableBehavior->getValue('???')
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): yii\behaviors\AttributeBehavior->evaluateAttributes('???')
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): ::call_user_func:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php:538}('???', '???')
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(351): yii\base\Component->trigger('???', '???')
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(318): yii\base\Model->beforeValidate()
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\base\Model->validate('???', '???')
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(584): yii\db\ActiveRecord->update('???', '???')
+#9 /var/www/yii2-shop/backend/controllers/CategoryController.php(89): yii\db\BaseActiveRecord->save('???', '???')
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CategoryController->actionUpdate('???')
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#14 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('???', '???')
+#15 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#16 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2015-05-02 20:28:59 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'category/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'YV91cmJSdnUQPAwQFysaLwY3HiAWFS85Jg0wPwoAFSAWDDEYEjgnAQ=='
+    'Category' => [
+        'parent_id' => ''
+        'title' => 'Квадрокоптеры'
+    ]
+]
+
+$_COOKIE = [
+    'XDEBUG_SESSION' => '11578'
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '190'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://admin.shop.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=category%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'XDEBUG_SESSION=11578; _csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '55092'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=category%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=category%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430598539.793
+    'REQUEST_TIME' => 1430598539
+]
+2015-05-02 20:30:03 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'array_keys() expects parameter 1 to be array, string given' in /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseInflector.php:448
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseInflector.php(425): yii\helpers\BaseInflector::transliterate('???')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/SluggableBehavior.php(171): yii\helpers\BaseInflector::slug('???', '???', '???')
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/AttributeBehavior.php(94): yii\behaviors\SluggableBehavior->getValue('???')
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): yii\behaviors\AttributeBehavior->evaluateAttributes('???')
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): ::call_user_func:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php:538}('???', '???')
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(351): yii\base\Component->trigger('???', '???')
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(318): yii\base\Model->beforeValidate()
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\base\Model->validate('???', '???')
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(584): yii\db\ActiveRecord->update('???', '???')
+#9 /var/www/yii2-shop/backend/controllers/CategoryController.php(89): yii\db\BaseActiveRecord->save('???', '???')
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CategoryController->actionUpdate('???')
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#14 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('???', '???')
+#15 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#16 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2015-05-02 20:29:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'category/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'YV91cmJSdnUQPAwQFysaLwY3HiAWFS85Jg0wPwoAFSAWDDEYEjgnAQ=='
+    'Category' => [
+        'parent_id' => ''
+        'title' => 'Квадрокоптеры'
+    ]
+]
+
+$_COOKIE = [
+    'XDEBUG_SESSION' => '11578'
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '190'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://admin.shop.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=category%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'XDEBUG_SESSION=11578; _csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '55098'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=category%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=category%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430598584.317
+    'REQUEST_TIME' => 1430598584
+]
+2015-05-02 20:30:51 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'array_keys() expects parameter 1 to be array, string given' in /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseInflector.php:448
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseInflector.php(425): yii\helpers\BaseInflector::transliterate('???')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/SluggableBehavior.php(171): yii\helpers\BaseInflector::slug('???', '???', '???')
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/behaviors/AttributeBehavior.php(94): yii\behaviors\SluggableBehavior->getValue('???')
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): yii\behaviors\AttributeBehavior->evaluateAttributes('???')
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): ::call_user_func:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php:538}('???', '???')
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(351): yii\base\Component->trigger('???', '???')
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Model.php(318): yii\base\Model->beforeValidate()
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveRecord.php(533): yii\base\Model->validate('???', '???')
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(584): yii\db\ActiveRecord->update('???', '???')
+#9 /var/www/yii2-shop/backend/controllers/CategoryController.php(89): yii\db\BaseActiveRecord->save('???', '???')
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\CategoryController->actionUpdate('???')
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#14 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('???', '???')
+#15 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#16 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2015-05-02 20:30:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'category/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'dlBUcVJmaEsHMy0TJx8EERE4PyMmITEHMQIRPDo0Cx4BAxAbIgw5Pw=='
+    'Category' => [
+        'parent_id' => ''
+        'title' => 'kvadrokoptery-1'
+    ]
+]
+
+$_COOKIE = [
+    'XDEBUG_SESSION' => '11578'
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '127'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://admin.shop.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=category%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'XDEBUG_SESSION=11578; _csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '55111'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=category%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=category%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430598629.235
+    'REQUEST_TIME' => 1430598629
+]
+2015-05-02 20:39:02 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\behaviors\SluggableBehavior::transliteration' in /var/www/yii2-shop/vendor/yiisoft/yii2/base/Object.php:161
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/BaseYii.php(518): yii\base\Object->__set('transliteration', 'Any-Latin; NFKD')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\behaviors\SluggableBehavior), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/di/Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\\beehaviors\\S....,Array, Array)
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\beehaviors\\S....,Array, Array)
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(660): yii\BaseYii::createObject(Array)
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(644): yii\base\Component->attachBehaviorInternal(0, Array)
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(526): yii\base\Component->ensureBehaviors()
+#9 /var/www/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(827): yii\base\Component->trigger('init')
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Object.php(107): yii\db\BaseActiveRecord->init()
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1071): yii\base\Object->__construct()
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveQueryTrait.php(131): yii\db\BaseActiveRecord::instantiate(Array)
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveQuery.php(218): yii\db\ActiveQuery->createModels(Array)
+#14 /var/www/yii2-shop/vendor/yiisoft/yii2/db/Query.php(207): yii\db\ActiveQuery->populate(Array)
+#15 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveQuery.php(130): yii\db\Query->all(NULL)
+#16 /var/www/yii2-shop/backend/controllers/CategoryController.php(86): yii\db\ActiveQuery->all()
+#17 [internal function]: backend\controllers\CategoryController->actionUpdate('1')
+#18 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#19 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#20 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('update', Array)
+#21 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('category/update', Array)
+#22 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#24 {main}
+2015-05-02 20:38:59 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'category/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'dlBUcVJmaEsHMy0TJx8EERE4PyMmITEHMQIRPDo0Cx4BAxAbIgw5Pw=='
+    'Category' => [
+        'parent_id' => ''
+        'title' => 'kvadrokoptery-1'
+    ]
+]
+
+$_COOKIE = [
+    'XDEBUG_SESSION' => '11578'
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '127'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://admin.shop.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=category%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'XDEBUG_SESSION=11578; _csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '55326'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=category%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=category%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430599138.961
+    'REQUEST_TIME' => 1430599138
+]
+2015-05-02 20:40:18 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\behaviors\SluggableBehavior::transliteration' in /var/www/yii2-shop/vendor/yiisoft/yii2/base/Object.php:161
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/BaseYii.php(518): yii\base\Object->__set('transliteration', 'Any-Latin; NFKD')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\behaviors\SluggableBehavior), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/di/Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\\beehaviors\\S....,Array, Array)
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\beehaviors\\S....,Array, Array)
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(660): yii\BaseYii::createObject(Array)
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(644): yii\base\Component->attachBehaviorInternal(0, Array)
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(526): yii\base\Component->ensureBehaviors()
+#9 /var/www/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(827): yii\base\Component->trigger('init')
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Object.php(107): yii\db\BaseActiveRecord->init()
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1071): yii\base\Object->__construct()
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveQueryTrait.php(131): yii\db\BaseActiveRecord::instantiate(Array)
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveQuery.php(218): yii\db\ActiveQuery->createModels(Array)
+#14 /var/www/yii2-shop/vendor/yiisoft/yii2/db/Query.php(207): yii\db\ActiveQuery->populate(Array)
+#15 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveQuery.php(130): yii\db\Query->all(NULL)
+#16 /var/www/yii2-shop/backend/controllers/CategoryController.php(86): yii\db\ActiveQuery->all()
+#17 [internal function]: backend\controllers\CategoryController->actionUpdate('1')
+#18 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#19 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#20 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('update', Array)
+#21 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('category/update', Array)
+#22 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#24 {main}
+2015-05-02 20:40:15 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'category/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'dlBUcVJmaEsHMy0TJx8EERE4PyMmITEHMQIRPDo0Cx4BAxAbIgw5Pw=='
+    'Category' => [
+        'parent_id' => ''
+        'title' => 'kvadrokoptery-1'
+    ]
+]
+
+$_COOKIE = [
+    'XDEBUG_SESSION' => '11578'
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '127'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://admin.shop.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=category%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'XDEBUG_SESSION=11578; _csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '55333'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=category%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=category%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430599215.651
+    'REQUEST_TIME' => 1430599215
+]
+2015-05-02 20:40:53 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\behaviors\SluggableBehavior::transliteration' in /var/www/yii2-shop/vendor/yiisoft/yii2/base/Object.php:161
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/BaseYii.php(518): yii\base\Object->__set('transliteration', 'Any-Latin; NFKD')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\behaviors\SluggableBehavior), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/di/Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\\beehaviors\\S....,Array, Array)
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\beehaviors\\S....,Array, Array)
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(660): yii\BaseYii::createObject(Array)
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(644): yii\base\Component->attachBehaviorInternal(0, Array)
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(526): yii\base\Component->ensureBehaviors()
+#9 /var/www/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(827): yii\base\Component->trigger('init')
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Object.php(107): yii\db\BaseActiveRecord->init()
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1071): yii\base\Object->__construct()
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveQueryTrait.php(131): yii\db\BaseActiveRecord::instantiate(Array)
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveQuery.php(218): yii\db\ActiveQuery->createModels(Array)
+#14 /var/www/yii2-shop/vendor/yiisoft/yii2/db/Query.php(207): yii\db\ActiveQuery->populate(Array)
+#15 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveQuery.php(130): yii\db\Query->all(NULL)
+#16 /var/www/yii2-shop/backend/controllers/CategoryController.php(86): yii\db\ActiveQuery->all()
+#17 [internal function]: backend\controllers\CategoryController->actionUpdate('1')
+#18 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#19 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#20 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('update', Array)
+#21 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('category/update', Array)
+#22 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#24 {main}
+2015-05-02 20:40:50 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'category/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'XDEBUG_SESSION' => '11578'
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'XDEBUG_SESSION=11578; _csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '55341'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=category%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=category%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430599250.864
+    'REQUEST_TIME' => 1430599250
+]
+2015-05-02 23:00:44 [127.0.0.1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'backend\controllers\BrandController' in file: /var/www/yii2-shop/backend/controllers/BrandController.php. Namespace missing?' in /var/www/yii2-shop/vendor/yiisoft/yii2/BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\controol..')
+#1 [internal function]: spl_autoload_call('backend\\controol..')
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(563): class_exists('backend\\controol..')
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(521): yii\base\Module->createControllerByID('brand')
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(449): yii\base\Module->createController('brand/index')
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('brand/index', Array)
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-05-02 23:00:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'brand/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+    'XDEBUG_SESSION' => '16814'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_REFERER' => 'http://admin.shop.local/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D; XDEBUG_SESSION=16814'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '56891'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=brand%2Findex'
+    'REQUEST_URI' => '/index.php?r=brand%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430607644.705
+    'REQUEST_TIME' => 1430607644
+]
+2015-05-02 23:01:23 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\BrandSearch' not found' in /var/www/yii2-shop/backend/controllers/BrandController.php:35
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction()
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#5 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#6 {main}
+2015-05-02 23:01:23 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'brand/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+    'XDEBUG_SESSION' => '16814'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D; XDEBUG_SESSION=16814'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '56921'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=brand%2Findex'
+    'REQUEST_URI' => '/index.php?r=brand%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430607683.725
+    'REQUEST_TIME' => 1430607683
+]
+2015-05-02 23:10:13 [127.0.0.1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in /var/www/yii2-shop/vendor/yiisoft/yii2/web/Controller.php:93
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('brand/view', Array)
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#6 {main}
+2015-05-02 23:10:13 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'brand/view'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+    'XDEBUG_SESSION' => '15918'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=brand%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D; XDEBUG_SESSION=15918'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '57077'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=brand%2Fview'
+    'REQUEST_URI' => '/index.php?r=brand%2Fview'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430608213.582
+    'REQUEST_TIME' => 1430608213
+]
+2015-05-02 23:19:15 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: brands' in /var/www/yii2-shop/backend/views/product/_form.php:22
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('???', '???', '???')
+#2 /var/www/yii2-shop/backend/views/product/create.php(20): yii\base\View->render('???', '???', '???')
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(325): ::unknown()
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('???', '???', '???')
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('???', '???', '???')
+#7 /var/www/yii2-shop/backend/controllers/ProductController.php(75): yii\base\Controller->render('???', '???')
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\ProductController->actionCreate()
+#9 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('???', '???')
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#14 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#15 {main}
+2015-05-02 23:19:14 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'product/create'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+    'XDEBUG_SESSION' => '15918'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D; XDEBUG_SESSION=15918'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '57173'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=product%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430608754.899
+    'REQUEST_TIME' => 1430608754
+]
+2015-05-02 23:21:42 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Brand' not found' in /var/www/yii2-shop/backend/controllers/ProductController.php:65
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('???', '???')
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#5 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#6 {main}
+2015-05-02 23:21:42 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'product/create'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+    'XDEBUG_SESSION' => '15918'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D; XDEBUG_SESSION=15918'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '57200'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=product%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430608902.312
+    'REQUEST_TIME' => 1430608902
+]
+2015-05-02 23:31:48 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: brands' in /var/www/yii2-shop/backend/views/product/_form.php:22
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('???', '???', '???')
+#2 /var/www/yii2-shop/backend/views/product/update.php(20): yii\base\View->render('???', '???', '???')
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(325): ::unknown()
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('???', '???', '???')
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('???', '???', '???')
+#7 /var/www/yii2-shop/backend/controllers/ProductController.php(97): yii\base\Controller->render('???', '???')
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\ProductController->actionUpdate('???')
+#9 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('???', '???')
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#14 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#15 {main}
+2015-05-02 23:31:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'product/update'
+    'id' => '3'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+    'XDEBUG_SESSION' => '15918'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=product%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D; XDEBUG_SESSION=15918'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '57296'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fupdate&id=3'
+    'REQUEST_URI' => '/index.php?r=product%2Fupdate&id=3'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430609508.438
+    'REQUEST_TIME' => 1430609508
+]
+2015-05-02 23:33:07 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: brands' in /var/www/yii2-shop/backend/views/product/_form.php:22
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('???', '???', '???')
+#2 /var/www/yii2-shop/backend/views/product/update.php(20): yii\base\View->render('???', '???', '???')
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(325): ::unknown()
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('???', '???', '???')
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('???', '???', '???')
+#7 /var/www/yii2-shop/backend/controllers/ProductController.php(97): yii\base\Controller->render('???', '???')
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\ProductController->actionUpdate('???')
+#9 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('???', '???')
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#14 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#15 {main}
+2015-05-02 23:33:07 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'product/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+    'XDEBUG_SESSION' => '15918'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=product%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D; XDEBUG_SESSION=15918'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '57298'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=product%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430609587.423
+    'REQUEST_TIME' => 1430609587
+]
+2015-05-02 23:33:14 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: brands' in /var/www/yii2-shop/backend/views/product/_form.php:22
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('???', '???', '???')
+#2 /var/www/yii2-shop/backend/views/product/update.php(20): yii\base\View->render('???', '???', '???')
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(325): ::unknown()
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('???', '???', '???')
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('???', '???', '???')
+#7 /var/www/yii2-shop/backend/controllers/ProductController.php(97): yii\base\Controller->render('???', '???')
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\ProductController->actionUpdate('???')
+#9 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('???', '???')
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#14 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#15 {main}
+2015-05-02 23:33:14 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'product/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+    'XDEBUG_SESSION' => '19175'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=product%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D; XDEBUG_SESSION=19175'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '57299'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=product%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430609594.743
+    'REQUEST_TIME' => 1430609594
+]
+2015-05-02 23:33:50 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: brands' in /var/www/yii2-shop/backend/views/product/_form.php:22
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('???', '???', '???')
+#2 /var/www/yii2-shop/backend/views/product/update.php(20): yii\base\View->render('???', '???', '???')
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(325): ::unknown()
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('???', '???', '???')
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('???', '???', '???')
+#7 /var/www/yii2-shop/backend/controllers/ProductController.php(97): yii\base\Controller->render('???', '???')
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\ProductController->actionUpdate('???')
+#9 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('???', '???')
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#14 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#15 {main}
+2015-05-02 23:33:33 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'product/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+    'XDEBUG_SESSION' => '19175'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=product%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D; XDEBUG_SESSION=19175'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '57309'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=product%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430609612.968
+    'REQUEST_TIME' => 1430609612
+]
+2015-05-02 23:34:42 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: brands' in /var/www/yii2-shop/backend/views/product/_form.php:22
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('???', '???', '???')
+#2 /var/www/yii2-shop/backend/views/product/update.php(20): yii\base\View->render('???', '???', '???')
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(325): ::unknown()
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('???', '???', '???')
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('???', '???', '???')
+#7 /var/www/yii2-shop/backend/controllers/ProductController.php(97): yii\base\Controller->render('???', '???')
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\ProductController->actionUpdate('???')
+#9 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('???', '???')
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#14 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#15 {main}
+2015-05-02 23:34:32 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'product/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+    'XDEBUG_SESSION' => '19175'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=product%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D; XDEBUG_SESSION=19175'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '57315'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=product%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430609672.135
+    'REQUEST_TIME' => 1430609672
+]
+2015-05-02 23:38:03 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'htmlspecialchars() expects parameter 1 to be string, object given' in /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseHtml.php:105
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/i18n/Formatter.php(300): yii\helpers\BaseHtml::encode('???', '???')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/i18n/Formatter.php(265): yii\i18n\Formatter->asText('???')
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/i18n/Formatter.php(265): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/i18n/Formatter.php:265}('???', '???')
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/widgets/DetailView.php(153): yii\i18n\Formatter->format('???', '???')
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/widgets/DetailView.php(135): yii\widgets\DetailView->renderAttribute('???', '???')
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Widget.php(96): yii\widgets\DetailView->run()
+#6 /var/www/yii2-shop/backend/views/product/view.php(51): yii\base\Widget::widget('???')
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(325): ::unknown()
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#9 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('???', '???', '???')
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('???', '???', '???')
+#11 /var/www/yii2-shop/backend/controllers/ProductController.php(55): yii\base\Controller->render('???', '???')
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\ProductController->actionView('???')
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#14 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#15 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#16 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('???', '???')
+#17 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#18 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#19 {main}
+2015-05-02 23:38:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'product/view'
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+    'XDEBUG_SESSION' => '19175'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=product%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D; XDEBUG_SESSION=19175'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '57348'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fview&id=2'
+    'REQUEST_URI' => '/index.php?r=product%2Fview&id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430609883.803
+    'REQUEST_TIME' => 1430609883
+]
+2015-05-02 23:39:03 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'htmlspecialchars() expects parameter 1 to be string, object given' in /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseHtml.php:105
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/i18n/Formatter.php(300): yii\helpers\BaseHtml::encode('???', '???')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/i18n/Formatter.php(265): yii\i18n\Formatter->asText('???')
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/i18n/Formatter.php(265): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/i18n/Formatter.php:265}('???', '???')
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/widgets/DetailView.php(153): yii\i18n\Formatter->format('???', '???')
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/widgets/DetailView.php(135): yii\widgets\DetailView->renderAttribute('???', '???')
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Widget.php(96): yii\widgets\DetailView->run()
+#6 /var/www/yii2-shop/backend/views/product/view.php(51): yii\base\Widget::widget('???')
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(325): ::unknown()
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#9 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('???', '???', '???')
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('???', '???', '???')
+#11 /var/www/yii2-shop/backend/controllers/ProductController.php(55): yii\base\Controller->render('???', '???')
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\ProductController->actionView('???')
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#14 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#15 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#16 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('???', '???')
+#17 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#18 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#19 {main}
+2015-05-02 23:39:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'product/view'
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+    'XDEBUG_SESSION' => '19175'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=product%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D; XDEBUG_SESSION=19175'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '57353'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fview&id=2'
+    'REQUEST_URI' => '/index.php?r=product%2Fview&id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430609943.184
+    'REQUEST_TIME' => 1430609943
+]
+2015-05-02 23:41:44 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Product::brand' in /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(246): yii\base\Component->__get('brand')
+#1 /var/www/yii2-shop/backend/views/product/view.php(42): yii\db\BaseActiveRecord->__get('brand')
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/yii2-s...')
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/yii2-s...', Array)
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/yii2-s...', Array, Object(backend\controllers\ProductController))
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('view', Array, Object(backend\controllers\ProductController))
+#6 /var/www/yii2-shop/backend/controllers/ProductController.php(55): yii\base\Controller->render('view', Array)
+#7 [internal function]: backend\controllers\ProductController->actionView('2')
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('product/view', Array)
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#14 {main}
+2015-05-02 23:41:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'product/view'
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+    'XDEBUG_SESSION' => '19175'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D; XDEBUG_SESSION=19175'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '57371'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fview&id=2'
+    'REQUEST_URI' => '/index.php?r=product%2Fview&id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430610104.212
+    'REQUEST_TIME' => 1430610104
+]
+2015-05-02 23:44:33 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/yii2-shop/backend/views/product/view.php:42
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('???', '???', '???')
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('???', '???', '???')
+#3 /var/www/yii2-shop/backend/controllers/ProductController.php(55): yii\base\Controller->render('???', '???')
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\ProductController->actionView('???')
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('???', '???')
+#9 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#10 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2015-05-02 23:44:33 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'product/view'
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+    'XDEBUG_SESSION' => '19175'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D; XDEBUG_SESSION=19175'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '57377'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fview&id=2'
+    'REQUEST_URI' => '/index.php?r=product%2Fview&id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430610273.875
+    'REQUEST_TIME' => 1430610273
+]
+2015-05-02 23:46:38 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /var/www/yii2-shop/backend/views/product/view.php:42
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('???', '???', '???')
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('???', '???', '???')
+#3 /var/www/yii2-shop/backend/controllers/ProductController.php(55): yii\base\Controller->render('???', '???')
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\ProductController->actionView('???')
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('???', '???')
+#9 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#10 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2015-05-02 23:46:38 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'product/view'
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+    'XDEBUG_SESSION' => '19175'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D; XDEBUG_SESSION=19175'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '57381'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fview&id=2'
+    'REQUEST_URI' => '/index.php?r=product%2Fview&id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430610398.578
+    'REQUEST_TIME' => 1430610398
+]
+2015-05-02 23:47:50 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'htmlspecialchars() expects parameter 1 to be string, object given' in /var/www/yii2-shop/vendor/yiisoft/yii2/helpers/BaseHtml.php:105
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/i18n/Formatter.php(300): yii\helpers\BaseHtml::encode('???', '???')
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/i18n/Formatter.php(265): yii\i18n\Formatter->asText('???')
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/i18n/Formatter.php(265): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/i18n/Formatter.php:265}('???', '???')
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/widgets/DetailView.php(153): yii\i18n\Formatter->format('???', '???')
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/widgets/DetailView.php(135): yii\widgets\DetailView->renderAttribute('???', '???')
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Widget.php(96): yii\widgets\DetailView->run()
+#6 /var/www/yii2-shop/backend/views/product/view.php(49): yii\base\Widget::widget('???')
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(325): ::unknown()
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('???', '???')
+#9 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('???', '???', '???')
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('???', '???', '???')
+#11 /var/www/yii2-shop/backend/controllers/ProductController.php(55): yii\base\Controller->render('???', '???')
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\ProductController->actionView('???')
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}('???', '???')
+#14 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('???')
+#15 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('???', '???')
+#16 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('???', '???')
+#17 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest('???')
+#18 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#19 {main}
+2015-05-02 23:47:50 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'product/view'
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+    'XDEBUG_SESSION' => '19175'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D; XDEBUG_SESSION=19175'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '57384'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fview&id=2'
+    'REQUEST_URI' => '/index.php?r=product%2Fview&id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430610470.696
+    'REQUEST_TIME' => 1430610470
+]
+2015-05-02 23:58:49 [127.0.0.1][-][-][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /var/www/yii2-shop/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('delete', Array)
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('product/delete', Array)
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-05-02 23:58:49 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'product/delete'
+    'id' => '3'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qcybuylZghkRtGYLGREMhRcUwSDjpjQt\";}'
+    'XDEBUG_SESSION' => '19175'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=product%2Fview&id=3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=c8ed65223e14acbc8358ed8cf7172d6107dd8e60906956ecdc299ecaf644144ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qcybuylZghkRtGYLGREMhRcUwSDjpjQt%22%3B%7D; XDEBUG_SESSION=19175'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '57487'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fdelete&id=3'
+    'REQUEST_URI' => '/index.php?r=product%2Fdelete&id=3'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430611129.321
+    'REQUEST_TIME' => 1430611129
+]
+2015-05-04 18:28:34 [127.0.0.1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'backend\controllers\AttributiveController' in file: /var/www/yii2-shop/backend/controllers/AttributiveController.php. Namespace missing?' in /var/www/yii2-shop/vendor/yiisoft/yii2/BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\controol..')
+#1 [internal function]: spl_autoload_call('backend\\controol..')
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(563): class_exists('backend\\controol..')
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(521): yii\base\Module->createControllerByID('attributive')
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(449): yii\base\Module->createController('attributive/ind...')
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('attributive/ind...', Array)
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-05-04 18:28:34 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'attributive/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '4387d8ca9b1e4b3fc0f6ac7292f8745dcc741be871666338a92ace97fbab0880a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ksa-E3rSNqWlE5rFuxmaoLvd2PIxXYRI\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_REFERER' => 'http://admin.shop.local/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4387d8ca9b1e4b3fc0f6ac7292f8745dcc741be871666338a92ace97fbab0880a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ksa-E3rSNqWlE5rFuxmaoLvd2PIxXYRI%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '38080'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=attributive%2Findex'
+    'REQUEST_URI' => '/index.php?r=attributive%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430764114.674
+    'REQUEST_TIME' => 1430764114
+]
+2015-05-04 18:40:47 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\SluggableBehavior' not found' in /var/www/yii2-shop/common/models/Attributive.php:31
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(526): yii\base\Component->ensureBehaviors()
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(827): yii\base\Component->trigger()
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Object.php(107): yii\db\BaseActiveRecord->init()
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1071): yii\base\Object->__construct()
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveQueryTrait.php(131): yii\db\BaseActiveRecord::instantiate()
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveQuery.php(218): yii\db\ActiveQuery->createModels()
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/db/ActiveQuery.php(287): yii\db\ActiveQuery->populate()
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/db/BaseActiveRecord.php(101): yii\db\ActiveQuery->one()
+#8 /var/www/yii2-shop/backend/controllers/AttributiveController.php(115): yii\db\BaseActiveRecord::findOne()
+#9 /var/www/yii2-shop/backend/controllers/AttributiveController.php(101): backend\controllers\AttributiveController->findModel()
+#10 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\AttributiveController->actionDelete()
+#11 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#12 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams()
+#13 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#14 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction()
+#15 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#16 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2015-05-04 18:40:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'attributive/delete'
+    'id' => '3'
+]
+
+$_POST = [
+    '_csrf' => 'eHQxbHRXSEUTB1BBMWQ6FjYFZgAxYjoDDQxcDRsbPiFKJHgULA4aDA=='
+]
+
+$_COOKIE = [
+    '_csrf' => '4387d8ca9b1e4b3fc0f6ac7292f8745dcc741be871666338a92ace97fbab0880a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ksa-E3rSNqWlE5rFuxmaoLvd2PIxXYRI\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '66'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://admin.shop.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=attributive%2Fview&id=3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4387d8ca9b1e4b3fc0f6ac7292f8745dcc741be871666338a92ace97fbab0880a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ksa-E3rSNqWlE5rFuxmaoLvd2PIxXYRI%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '38141'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=attributive%2Fdelete&id=3'
+    'REQUEST_URI' => '/index.php?r=attributive%2Fdelete&id=3'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430764847.883
+    'REQUEST_TIME' => 1430764847
+]
+2015-05-04 18:41:17 [127.0.0.1][-][-][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /var/www/yii2-shop/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('delete', Array)
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('attributive/del...', Array)
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-05-04 18:41:17 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'attributive/delete'
+    'id' => '3'
+]
+
+$_COOKIE = [
+    '_csrf' => '4387d8ca9b1e4b3fc0f6ac7292f8745dcc741be871666338a92ace97fbab0880a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ksa-E3rSNqWlE5rFuxmaoLvd2PIxXYRI\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4387d8ca9b1e4b3fc0f6ac7292f8745dcc741be871666338a92ace97fbab0880a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ksa-E3rSNqWlE5rFuxmaoLvd2PIxXYRI%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '38142'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=attributive%2Fdelete&id=3'
+    'REQUEST_URI' => '/index.php?r=attributive%2Fdelete&id=3'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430764877.359
+    'REQUEST_TIME' => 1430764877
+]
+2015-05-04 19:08:10 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'View' not found' in /var/www/yii2-shop/backend/views/brand/index.php:16
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render()
+#3 /var/www/yii2-shop/backend/controllers/BrandController.php(41): yii\base\Controller->render()
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\BrandController->actionIndex()
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction()
+#9 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#10 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2015-05-04 19:08:10 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'brand/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '4387d8ca9b1e4b3fc0f6ac7292f8745dcc741be871666338a92ace97fbab0880a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ksa-E3rSNqWlE5rFuxmaoLvd2PIxXYRI\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4387d8ca9b1e4b3fc0f6ac7292f8745dcc741be871666338a92ace97fbab0880a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ksa-E3rSNqWlE5rFuxmaoLvd2PIxXYRI%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '38534'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=brand%2Findex'
+    'REQUEST_URI' => '/index.php?r=brand%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430766490.97
+    'REQUEST_TIME' => 1430766490
+]
+2015-05-04 19:09:21 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Use of undefined constant POS_END - assumed 'POS_END'' in /var/www/yii2-shop/backend/views/brand/index.php:16
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render()
+#3 /var/www/yii2-shop/backend/controllers/BrandController.php(41): yii\base\Controller->render()
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\BrandController->actionIndex()
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction()
+#9 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#10 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2015-05-04 19:09:21 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'brand/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '4387d8ca9b1e4b3fc0f6ac7292f8745dcc741be871666338a92ace97fbab0880a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ksa-E3rSNqWlE5rFuxmaoLvd2PIxXYRI\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4387d8ca9b1e4b3fc0f6ac7292f8745dcc741be871666338a92ace97fbab0880a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ksa-E3rSNqWlE5rFuxmaoLvd2PIxXYRI%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '38537'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=brand%2Findex'
+    'REQUEST_URI' => '/index.php?r=brand%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430766561.588
+    'REQUEST_TIME' => 1430766561
+]
+2015-05-04 19:22:33 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'View' not found' in /var/www/yii2-shop/backend/views/attributive/index.php:16
+Stack trace:
+#0 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#1 /var/www/yii2-shop/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#2 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render()
+#3 /var/www/yii2-shop/backend/controllers/AttributiveController.php(41): yii\base\Controller->render()
+#4 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\controllers\AttributiveController->actionIndex()
+#5 /var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/var/www/yii2-shop/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#6 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#8 /var/www/yii2-shop/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction()
+#9 /var/www/yii2-shop/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#10 /var/www/yii2-shop/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2015-05-04 19:22:33 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'attributive/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '4387d8ca9b1e4b3fc0f6ac7292f8745dcc741be871666338a92ace97fbab0880a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ksa-E3rSNqWlE5rFuxmaoLvd2PIxXYRI\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.shop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_REFERER' => 'http://admin.shop.local/index.php?r=brand%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4387d8ca9b1e4b3fc0f6ac7292f8745dcc741be871666338a92ace97fbab0880a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ksa-E3rSNqWlE5rFuxmaoLvd2PIxXYRI%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Ubuntu) Server at admin.shop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Ubuntu)'
+    'SERVER_NAME' => 'admin.shop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/yii2-shop/backend/web/'
+    'SERVER_ADMIN' => 'pimstein@gmail.com'
+    'SCRIPT_FILENAME' => '/var/www/yii2-shop/backend/web/index.php'
+    'REMOTE_PORT' => '38619'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=attributive%2Findex'
+    'REQUEST_URI' => '/index.php?r=attributive%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1430767353.403
+    'REQUEST_TIME' => 1430767353
+]

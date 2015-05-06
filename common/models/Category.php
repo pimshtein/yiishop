@@ -25,7 +25,9 @@ class Category extends \yii\db\ActiveRecord
             [
                 'class' => SluggableBehavior::className(),
                 'attribute' => 'title',
-                'slugAttribute' => 'slug'
+                'slugAttribute' => 'slug',
+                'transliterator' => 'Russian-Latin/BGN; NFKD',
+                'forceUpdate' => false
             ],
         ];
     }
@@ -57,9 +59,9 @@ class Category extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'parent_id' => 'Parent',
-            'title' => 'Title',
-            'slug' => 'Slug',
+            'parent_id' => 'Родитель',
+            'title' => 'Название категории',
+            'slug' => 'Seo ЧПУ',
         ];
     }
 

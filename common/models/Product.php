@@ -15,11 +15,13 @@ use yz\shoppingcart\CartPositionTrait;
  * @property string $slug
  * @property string $description
  * @property integer $category_id
+ * @property integer $brand_id
  * @property string $price
  *
  * @property Image[] $images
  * @property OrderItem[] $orderItems
  * @property Category $category
+ * @property Brand $brand
  */
 class Product extends \yii\db\ActiveRecord implements CartPositionInterface
 {
@@ -52,6 +54,7 @@ class Product extends \yii\db\ActiveRecord implements CartPositionInterface
         return [
             [['description'], 'string'],
             [['category_id'], 'integer'],
+            [['brand_id'], 'integer'],
             [['price'], 'number'],
             [['title'], 'string', 'max' => 255]
         ];
@@ -64,11 +67,12 @@ class Product extends \yii\db\ActiveRecord implements CartPositionInterface
     {
         return [
             'id' => 'ID',
-            'title' => 'Title',
-            'slug' => 'Slug',
-            'description' => 'Description',
-            'category_id' => 'Category ID',
-            'price' => 'Price',
+            'title' => 'Название',
+            'slug' => 'Seo ЧПУ',
+            'description' => 'Описание',
+            'category_id' => 'Категория',
+            'brand_id' => 'Производитель',
+            'price' => 'Цена',
         ];
     }
 
@@ -95,6 +99,15 @@ class Product extends \yii\db\ActiveRecord implements CartPositionInterface
     {
         return $this->hasOne(Category::className(), ['id' => 'category_id']);
     }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getBrand()
+    {
+        return $this->hasOne(Brand::className(), ['id' => 'brand_id']);
+    }
+
 
     /**
      * @inheritdoc

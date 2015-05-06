@@ -35,6 +35,8 @@ AppAsset::register($this);
                 ['label' => 'Главная', 'url' => '/'],
                 ['label' => 'Категории', 'url' => ['/category/index']],
                 ['label' => 'Продукты', 'url' => ['/product/index']],
+                ['label' => 'Атрибуты', 'url' => ['attributive/index']],
+                ['label' => 'Производители', 'url' => ['/brand/index']],
                 ['label' => 'Заказы', 'url' => ['/order/index']]
             ];
             if (Yii::$app->user->isGuest) {
@@ -64,7 +66,6 @@ AppAsset::register($this);
     <footer class="footer">
         <div class="container">
         <p class="pull-left">&copy; Pims <?= date('Y') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p>
         </div>
     </footer>
 
