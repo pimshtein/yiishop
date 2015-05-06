@@ -1,7 +1,7 @@
 Yii 2 affiliate shop
 ==========================
 
-This is example project implementing a shop created to help people learn Yii 2.0.
+This is project implementing a affiliate shop created to get money :-).
 
 It is built on top of advanced template which includes three tiers: front end, back end, and console, each of which
 is a separate Yii application.
