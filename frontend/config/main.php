@@ -32,6 +32,18 @@ return [
         'cart' => [
             'class' => 'yz\shoppingcart\ShoppingCart',
         ],
+        'i18n' => [
+            'translations' => [
+                '*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@frontend/messages', // if advanced application, set @frontend/messages
+                    'sourceLanguage' => 'en',
+                    'fileMap' => [
+                        //'main' => 'main.php',
+                    ],
+                ],
+            ],
+        ],
     ],
     'params' => $params,
 ];
